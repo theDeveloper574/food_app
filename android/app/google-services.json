@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136243913230",
+    "project_id": "workapp-d4e73",
+    "storage_bucket": "workapp-d4e73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136243913230:android:ef10e253d93d9e1f2d125f",
+        "android_client_info": {
+          "package_name": "com.myapp.myyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136243913230-r2mkn6rb1gj91s9o66piuedvil25k3du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_wIt_LiuoG3bvXrBTkDy2q8GjIkYe4Qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136243913230-r2mkn6rb1gj91s9o66piuedvil25k3du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

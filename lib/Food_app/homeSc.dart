@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:myyapp/models/categories_model.dart';
@@ -12,7 +11,6 @@ import 'package:myyapp/screens/recpie_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'drawer_function.dart';
-import 'log_in.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

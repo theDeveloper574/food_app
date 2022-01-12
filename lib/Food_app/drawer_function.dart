@@ -3,7 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myyapp/main.dart';
 import 'package:myyapp/screens/add_to_cart_Screen.dart';
+
+import 'log_in.dart';
 
 class DrawerWid extends StatefulWidget {
 
@@ -159,7 +162,10 @@ class _DrawerWidState extends State<DrawerWid> {
                           setState(() {
                             isLoading =true;
                           });
-                          await FirebaseAuth.instance.signOut();
+                          flutterToast(Colors.white, Colors.red, "Log Out Successful");
+                          await FirebaseAuth.instance.signOut().then((value){
+                            Navigator.push(context, MaterialPageRoute(builder: (_)=>LogIn()));
+                          });
                           setState(() {
                             isLoading =false;
                           });

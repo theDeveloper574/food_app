@@ -195,6 +195,7 @@ class _SignUpState extends State<SignUp> {
       userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
               email: _email.text, password: _password.text);
+      flutterToast(Colors.white, Colors.green, 'Sign Up Successful');
       await FirebaseFirestore.instance.collection("users").doc().set({
         'name': _name.text.toString(),
         'email': _email.text.toString(),
@@ -221,3 +222,11 @@ class _SignUpState extends State<SignUp> {
     isLoading = true;
   }
 }
+
+
+
+
+
+
+
+
